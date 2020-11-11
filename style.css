@@ -38,6 +38,7 @@ button{
     border: none;
     padding: 0;
     font-size: 1em;
+    background-color: rgba(65, 79, 209, 0.568)
 }
 
 [data-math ="add"],

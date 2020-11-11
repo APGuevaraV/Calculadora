@@ -14,8 +14,8 @@ const calculator = () =>{
         // detectar si se pulso un a operacion matemática
         if(d.math) getOperation(t,d.math)//ok
 
-        // detectar si se pulso otra operación
-        if(d.operation)runOperation()
+        // detectar si se pulso otra operación = 0 C
+        if(d.operation)runOperation(d.operation)
     })
 }
 
@@ -23,12 +23,12 @@ const calculator = () =>{
 const writeScreen = number => {
 
     screen.textContent =='0' || operationStatus ===true
-    ? screen.textContent= number
-    : number === '.' && !screen.textContent.includes('.')
-        ? screen.textContent += number
-        : number !== '.'
-            ?screen.textContent += number
-            : null
+        ? screen.textContent= number
+        : number === '.' && !screen.textContent.includes('.')
+            ? screen.textContent += number
+            : number !== '.'
+                    ?screen.textContent += number
+                    : null
 
     operationStatus = false
 }

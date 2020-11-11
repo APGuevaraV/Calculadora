@@ -7,9 +7,10 @@
     <title>Calculadora</title>
 </head>
 <body>
-    <div class="calculator" id="calculator"></div>
+    <div class="calculator" id="calculator">
     <div class="calculator__screen" id="calculator-screen"></div>
         <div class="calculator__keys" id="calculator-keys">
+            <button data-operation="clear"></button>
             <button data-operation="clear">C</button>
             <button data-math="divide">/</button>
             <button data-math="multiply">*</button>
@@ -27,11 +28,9 @@
             <button data-operation="equals">=</button>
             <button data-number="0">0</button>
             <button data-number=".">.</button>
-            
-            
-            
+             
         </div>
-    
+    </div>
 
 <script src="calculator.js"></script>
 </body>
